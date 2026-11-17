@@ -29,8 +29,8 @@ const TARGET_BPS = 100; // value-vs-cost target, plans B/C only
 const TRAIL_BPS = 100; // trailing stop from the peak close since entry
 const STOP_BPS = 150; // hard stop, value-vs-cost
 
-// One-time insurance trade (only if zero fills by bar 1200).
-const INS_ARM_BAR = 1200;
+// One-time insurance trade (only if zero fills by bar 600, hour 10).
+const INS_ARM_BAR = 600;
 const INS_NOTIONAL_UNITS = 100_000_000n; // $100 of USDC
 const INS_TARGET_BPS = 50;
 const INS_STOP_BPS = 50;
