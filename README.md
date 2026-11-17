@@ -17,7 +17,7 @@ One-minute BTC bars whipsaw constantly, and a full-size round trip costs ~26-51 
 
 It exits by selling the whole position on a +100 bps value-vs-cost target (plans B/C), a 100 bps trailing stop from the peak close since entry, a 150 bps hard stop, or an EMA cross back down. Long only, one position, 100% of cash, max slippage 100 bps on every order.
 
-A one-time $100 insurance buy fires late in the window (bar 1200) if the bot has never traded, so a dead-flat day still meets the ≥1 trade guardrail; that position exits at ±50 bps or after 60 bars. EMAs use SMA warm-up (the first value is the simple average of the first N closes). Deterministic: no clock, no randomness, no network, no files.
+A one-time $100 insurance buy fires late in the window (bar 600) if the bot has never traded, so a dead-flat day still meets the ≥1 trade guardrail; that position exits at ±50 bps or after 60 bars. EMAs use SMA warm-up (the first value is the simple average of the first N closes). Deterministic: no clock, no randomness, no network, no files.
 
 ## Run
 
